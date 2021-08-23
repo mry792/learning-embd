@@ -1,2 +1,2 @@
 # learning-embd
-Repository of learning and experimentation projects for embedded C++.
+Repository for learning and experimentation projects for embedded C++.
