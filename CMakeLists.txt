@@ -17,7 +17,7 @@ target_compile_options(led.elf
 find_package(arche REQUIRED)
 target_link_libraries(led.elf arche::arche)
 
-# add_subdirectory(src)
+add_subdirectory(src)
 
 # Generate hex file.
 add_custom_command(
