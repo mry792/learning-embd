@@ -25,6 +25,10 @@ class LearningEmbdConan (ConanFile):
     def _run_tests (self):
         return tools.get_env('CONAN_RUN_TESTS', default = False)
 
+    requires = (
+        'arche/0.0.1@egoss/dev',
+    )
+
     def build_requirements (self):
         if self._run_tests:
             # self.test_requires('catch2/2.13.7')
