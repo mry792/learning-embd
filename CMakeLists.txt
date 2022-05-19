@@ -31,3 +31,13 @@ add_custom_target(
     hex-file
     DEPENDS led.hex
 )
+
+# Flash MCU.
+add_custom_target(
+    flash
+    DEPENDS led.hex
+    COMMAND avrdude
+        -c usbtiny
+        -p m328p
+        -U flash:w:led.hex
+)
